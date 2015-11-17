@@ -1,0 +1,22 @@
+body.driver {
+    background-color: rgba(187, 237, 181, 0.74);
+    font-family: monospace;
+}
+
+body.order {
+    background-color: rgba(114, 243, 145, 0.74);
+    font-family: monospace;
+}
+
+body.client {
+    background-color: rgba(201, 172, 237, 0.74);
+    font-family: monospace;
+}
+
+.form {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+    border-radius: 4px 4px 4px 4px;
+}
