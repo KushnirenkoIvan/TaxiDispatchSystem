@@ -32,18 +32,18 @@ public class Order {
     private Float price;
 
     @OneToOne
-    @Column(name = "OPERATOR_ID")
+    @JoinColumn(name = "OPERATOR_ID")
     private Operator operator;
 
     @OneToOne
-    @Column(name = "CLIENT")
+    @JoinColumn(name = "CLIENT_ID")
     private Client client;
 
     @Column(name = "STATUS")
     private String status;
 
     @OneToOne
-    @Column(name = "DRIVER")
+    @JoinColumn(name = "DRIVER_ID")
     private Driver driver;
 
     public Long getId() {

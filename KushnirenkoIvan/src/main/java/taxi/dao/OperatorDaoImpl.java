@@ -55,7 +55,7 @@ public class OperatorDaoImpl implements OperatorDao {
     }
 
     public Operator findByName(String login) {
-        Query query = sessionFactory.getCurrentSession().createQuery("select o from taxi.domain.Operator o where o.login = login");
+        Query query = sessionFactory.getCurrentSession().createQuery("select o from taxi.domain.Operator o where o.login =:login");
         query.setParameter("login", login);
         List<Operator> operator = query.list();
         if (operator != null && operator.size() > 0) {
